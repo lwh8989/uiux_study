@@ -1,0 +1,40 @@
+
+// ── 변수 (SCSS 문법) ──────────────────────────────
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-size-base: 16px;
+
+// ── Reset ─────────────────────────────────────────
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+// ── 중첩 문법 예시 ────────────────────────────────
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .title {
+    font-size: 2rem;
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .desc {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}

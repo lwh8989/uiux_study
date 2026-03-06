@@ -1,0 +1,20 @@
+node_modules/
+
+# Build output
+public/css/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Cache
+.eslintcache
+.stylelintcache
